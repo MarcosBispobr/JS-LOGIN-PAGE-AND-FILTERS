@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carros</title>
+    <script src="../js/index.js" defer></script>
+    <link rel="stylesheet" href="../css/index.css">
+   
+</head>
+<body>
+    <p id="bemVindo"></p>
+    <button id="sair">Sair</button>
+    <br> <br>
+    <select  id="filtro">
+        <option value="todos">Todos</option>
+        <option value="Fiat">Fiat</option>
+        <option value="Ford">Ford</option>
+        <option value="Chevrolet">Chevrolet</option>
+    </select>
+    <select  id="modelo">
+
+    </select>
+    <input type="text" id="tipoCarro" >
+    <br><br>
+<form id="insereCarro" >
+    <input type="text" id="marca" placeholder="Marca">
+    <select name="tipo" id="tipo">
+        <option value="Baixo Custo">Baixo Custo</option>
+        <option value="Médio Custo">Médio Custo</option>
+        <option value="Alto Custo">Alto Custo</option>
+    </select>
+    <br><br>
+    <input type="text" id="model" placeholder="Modelo">
+    <input type="number" id="ano" placeholder="Ano">
+    <input type="number" id="preco" placeholder="Preço">
+    <br><br>
+    <input type="submit" value="Cadastrar Carro" id="btnCarroSubmit">
+</form>
+    <div id="carros">
+
+    </div>
+</body>
+</html>
